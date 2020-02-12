@@ -13,5 +13,10 @@
 			$gender = $data->getElementsByTagName("gender")->item(0)->nodeValue;
 			
 	
-		echo "$id - $firstname - $age - $gender <br>";
+		echo "<ul>
+    <li>Id: <strong>$id</strong></li>
+    <li>Firstname: <strong>$firstname</strong></li>
+    <li>Age: <strong>$age</strong></li>
+    <li>Gender: <strong>$gender</strong></li>
+    </ul>";
 	}
