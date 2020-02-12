@@ -11,7 +11,7 @@
 			<data>";
 		while($row = mysqli_fetch_object($dbrecords)) {
 				echo "<item>
-					<ID>$row->ID</ID>
+					<id>$row->ID</id>
 					<firstname>$row->Firstame</firstname>
 					<age>$row->Age</age>
 					<gender>$row->Gender</gender>
