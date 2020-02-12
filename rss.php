@@ -1,7 +1,7 @@
 <?php
 	
 	$object = new DOMDocument();
-	$object->load("https://exerxml.herokuapp.com/");
+	$object->load("https://xmll.herokuapp.com/");
 	
 	
 	$content = $object->getElementsByTagName("item");
