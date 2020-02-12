@@ -2,7 +2,7 @@
 		$host = "dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com"; $username = "admin";
 		$password = "root1234";
 		$connect = @mysqli_connect($host, $username, $password) or die("Unable to connect to host");
-		$db = @mysqli_select_db($connect, "db_1822002") or die("Cannot connect to database");
+		$db = @mysqli_select_db($connect, "db_1822085") or die("Cannot connect to database");
 		$sql = "select * from Erp";
 		$dbrecords = mysqli_query($connect,$sql) or die("Unable to query data");
 		
@@ -11,7 +11,8 @@
 			<data>";
 		while($row = mysqli_fetch_object($dbrecords)) {
 				echo "<item>
-					<name>$row->Name</name>
+					<ID>$row->ID</ID>
+					<firstname>$row->Firstame</firstname>
 					<age>$row->Age</age>
 					<gender>$row->Gender</gender>
 					
