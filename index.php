@@ -3,7 +3,7 @@
 		$password = "root1234";
 		$connect = @mysqli_connect($host, $username, $password) or die("Unable to connect to host");
 		$db = @mysqli_select_db($connect, "db_1822085") or die("Cannot connect to database");
-		$sql = "select * from Erp";
+		$sql = "select * from Hu";
 		$dbrecords = mysqli_query($connect,$sql) or die("Unable to query data");
 		
 		header("Content-type: text/xml");
